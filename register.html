@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SiteonE</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <!-- <link rel="stylesheet" href="css/bootstrap.css" rel="stylesheet"> -->
+
+
 </head>
 
 <body>
@@ -27,11 +30,11 @@
 
     </nav>
 
-    <form class="formclass" action="quiz.html" id="create">
+    <form name="form" class="formclass" id="create" onsubmit="validateForm();" method="post">
         <h1>
             sign up
         </h1>
-        <input type="text" placeholder="username">
+        <input type="text" value="username" placeholder="username">
 
         <input type="email" placeholder="Email Adress" required>
         <label>
@@ -43,7 +46,7 @@
         <option value="others">Others</option>
         <input type="password" placeholder="password" required>
         <input type="password" placeholder="confirm password" required>
-        <input type="submit" placeholder="sign in" formaction="quiz.html" id="submitform">
+        <input type="submit" placeholder="sign in" id="submitform">
         <input type="checkbox" id="checkbox"><span>i agree to term and condition</span>
     </form>
 
@@ -53,10 +56,11 @@
 
         </div>
     </div>
-
+    
     <footer>
         <hr>
     </footer>
+    
 </body>
 
 </html>
